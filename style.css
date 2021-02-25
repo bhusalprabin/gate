@@ -2,10 +2,9 @@
 
 .header {
   position: relative;
-
   color: #fff;
   font-family: "Roboto", sans-serif;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   background: linear-gradient(
@@ -13,7 +12,7 @@
       rgba(10, 8, 9, 0.493),
       rgba(26, 24, 26, 0.87)
     ),
-    url("./assets/image/priscilla-du-preez-XkKCui44iM0-unsplash.jpg");
+    url("./assets/image/header-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,9 +20,16 @@
 
 .main-nav {
   padding: 2rem;
+  margin: 0 10rem;
 }
 .main-nav a {
   color: #fff !important;
+}
+.custom-nav-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  /* padding: 0 20px !important; */
 }
 
 .custom-button {
@@ -32,30 +38,30 @@
   color: rgb(4, 26, 44);
 }
 
-.hero {
+.header-content {
   margin-top: 20vh;
   text-align: center;
 }
-.hero h1 {
+.header-content h1 {
   color: #fff;
   font-size: 3rem;
   font-family: "RocknRoll One", sans-serif;
   text-transform: capitalize;
 }
 
-.hero h4 {
+.header-content h4 {
   color: #fff;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-.hero p {
+.header-content p {
   margin: 1rem 0;
   color: #fff;
 }
-.hero p span {
+.header-content p span {
   text-decoration: underline;
 }
-.hero button {
+.header-content button {
   padding: 0.6rem 2rem;
   border: 1px solid rgb(4, 26, 44);
   border-radius: 10rem;
@@ -76,39 +82,120 @@
   outline: none;
 }
 
+/* hero */
+
+.hero {
+  height: 50vh;
+}
+.hero-container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.hero-vid {
+  position: relative;
+  height: 20rem;
+  background: linear-gradient(to bottom, rgba(10, 8, 9, 0.493), rgb(26, 24, 26)),
+    url("./assets/image/hero-img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero-vid-out {
+  position: relative;
+  padding: 2rem;
+}
+.hero-star-box1 {
+  position: absolute;
+  top: 0;
+  color: #e60073;
+}
+.hero-vid-icon-box {
+  color: rgb(236, 232, 232);
+  font-size: 4rem;
+  cursor: pointer;
+}
+.hero-vid-icon-box .fas {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    font-size: 3.6rem;
+    text-shadow: 0 0 10px rgb(209, 139, 139), 0 0 20px rgb(145, 92, 92),
+      0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073,
+      0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(216, 151, 151), 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.hero-cont {
+  padding: 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-cont h2 {
+  font-size: 2rem;
+  font-family: "RocknRoll One", sans-serif;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.hero-cont h2 span {
+  color: #e60073;
+  display: block;
+}
+.hero-cont p {
+  font-size: 1.2rem;
+}
+
+.modal-dialog {
+  max-width: 60vw;
+}
+
+.modal-backdrop {
+  opacity: 0.5 !important;
+}
+
 /*  hero-icon-content  */
 
-.hero-icon-content {
-  position: absolute;
+.counter {
   text-align: center;
-  top: 70vh;
-  left: 50%;
-  transform: translate(-50%);
-  height: 20vh;
+  padding: 2rem;
+  width: 100%;
   background-color: rgb(4, 26, 44);
-  border-radius: 20px;
 }
-.hero-icon-content {
+.counter-icon-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero-icon-content .icon {
-  height: 100%;
+
+.counter-icon-content .icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.hero-icon-content .icon i {
+.counter-icon-content .icon i {
   font-size: 2rem;
-  padding: 5px;
+  padding: 10px 5px;
   color: rgb(246, 253, 139);
 }
 .icon-content h5 {
   font-weight: bold;
   font-family: "RocknRoll One", sans-serif;
   font-size: 2rem;
-  padding: 1rem 0 0;
   color: #fff;
 }
 .icon-content p {

@@ -21,10 +21,12 @@
   <body>
     <div class="header">
       <!-- navbar  -->
-      <div class="main-nav container">
+      <div class="main-nav">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">GATE Logo</a>
+            <a class="navbar-brand" href="#">
+              <img src="./assets/image/logo.png" alt="" />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -38,9 +40,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Find Tutors</a>
-                <a class="nav-link" href="#">How It Works</a>
+                <a
+                  class="nav-link active custom-nav-link"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+                <a class="nav-link custom-nav-link" href="#">Find Tutors</a>
+                <a class="nav-link custom-nav-link" href="#">How It Works</a>
                 <button type="button " class="btn btn-light custom-button">
                   Become A Tutor
                 </button>
@@ -49,7 +56,7 @@
           </div>
         </nav>
       </div>
-      <div class="hero container">
+      <div class="header-content container">
         <h1>Hire the right tutor now!</h1>
         <!-- <h4>Book one-on-one lesson with verified tutors in your area</h4>
         <button>Hire a Tutor</button> -->
@@ -62,48 +69,103 @@
       </div>
     </div>
 
-    <div class="hero-icon-content container">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="icon">
-              <i class="fas fa-chalkboard-teacher"></i>
-              <div class="icon-content">
-                <h5>100</h5>
-                <p>Total Tutors</p>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="row">
+            <div class="col-sm hero-vid-out">
+              <div class="hero-star-box1">
+                <i class="fas fa-star star1"></i>
+                <i class="fas fa-star star2"></i>
+                <i class="fas fa-star star3"></i>
+              </div>
+              <div class="hero-vid">
+                <div class="hero-vid-icon-box">
+                  <i
+                    class="fas fa-play-circle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  ></i>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm">
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-              <div class="icon-content">
-                <h5>53</h5>
-                <p>Tutors Jobs</p>
-              </div>
+            <div class="col-sm hero-cont">
+              <h2>Find Your <span>Perfect Tutors</span> And enjoy learning</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi vel totam et provident voluptates ratione possimus
+                expedita cum omnis architecto?
+              </p>
             </div>
           </div>
-          <div class="col-sm">
-            <div class="icon">
-              <i class="fas fa-user-graduate"></i>
-              <div class="icon-content">
-                <h5>1200</h5>
-                <p>Total Students</p>
+        </div>
+      </section>
+
+      <section class="counter">
+        <div class="counter-icon-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm counter-box">
+                <div class="icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  <div class="icon-content">
+                    <h5>100</h5>
+                    <p>Total Tutors</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="icon">
-              <i class="far fa-smile"></i>
-              <div class="icon-content">
-                <h5>4.5/5</h5>
-                <p>Tutors Rating</p>
+              <div class="col-sm">
+                <div class="icon">
+                  <i class="fas fa-briefcase"></i>
+                  <div class="icon-content">
+                    <h5>53</h5>
+                    <p>Tutors Jobs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="icon">
+                  <i class="fas fa-user-graduate"></i>
+                  <div class="icon-content">
+                    <h5>1200</h5>
+                    <p>Total Students</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="icon">
+                  <i class="far fa-smile"></i>
+                  <div class="icon-content">
+                    <h5>4.5/5</h5>
+                    <p>Tutors Rating</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <video width="100%" controls>
+              <source src="./assets/video/vid.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+          </div>
+        </div>
       </div>
     </div>
+
     <!-- bootstrap js -->
 
     <script
@@ -111,5 +173,10 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function showModel() {
+        document.getElementById("play-btn").style.display = "block";
+      }
+    </script>
   </body>
 </html>
