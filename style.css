@@ -202,3 +202,253 @@
   font-family: "RocknRoll One", sans-serif;
   color: #fff;
 }
+
+.how-to-do{
+  padding: 4rem 0;
+  height: 70vh;
+  text-align: center;
+}
+.how-to-do-container h1{
+  font-family: "RocknRoll One", sans-serif;
+  padding: 30px 0;
+  
+}
+.how-to-do-container {
+  padding: 20px 10px;
+  position: relative;
+  
+}
+.how-to-do-container button{
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #e60073;
+  outline: none;
+  border: 1px solid #ff4da6;
+  border-radius:5px ;
+  margin: 2rem 0 0;
+}
+.how-to-do-container p{
+  color: rgb(114, 111, 111);
+}
+.how-to-do-container button:hover{
+  background-color: #ff4da6;
+}
+.how-to-do-col{
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to-do-icon-box{
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e60073;
+  border-radius: 100px;
+}
+
+.how-to-do-content h4{
+  padding: 10px;
+  text-align: center;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.arrow1{
+  position: absolute;
+  right: -1rem;
+  color: #e60073;
+  font-size: 30px;
+}
+.arrow2{
+  position: absolute;
+  right: -1rem;
+  color: #e60073;
+  font-size: 30px;
+}
+
+
+.course-category{
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+  background-color: rgb(4, 26, 44);
+}
+.course-category h1{
+  font-family: "RocknRoll One", sans-serif;
+}
+.course-category h6{
+  padding: 1rem 0;
+}
+.course-category h6 a{
+  
+  color: #fff;
+  text-decoration: none;
+}
+.course-category h6 a:hover, .course-category h6 a:active{
+  color: #ccc;
+}
+
+.course-category-grid .row{
+  padding: 30px 0 ;
+}
+
+.sub{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.sub-container{
+  margin: 10px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 110px;
+  width: 110px;
+  
+  border-radius: 100px;
+  background-color: #040933ec;
+}
+.sub-container i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.637);
+}
+.sub a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* testimonial-container */
+.what-user-say{
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+.what-user-say h1{
+  font-family: "RocknRoll One", sans-serif;
+}
+.carousel-item{
+  padding: 5rem 10rem;
+}
+.testimonial-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.testimonial-container img{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 5px solid rgb(4, 26, 44);
+}
+.testimonial-content{
+  padding: 0 5rem;
+}
+.testimonial-content p {
+  color: rgba(20, 14, 14, 0.568);
+}
+.testimonial-quote{
+  display: flex;
+}
+.testimonial-quote i{
+  font-size: 1.2rem;
+  padding: 0 1rem 1rem;
+  color: rgba(20, 14, 14, 0.568);
+}
+.testimonial-quote .fa-quote-left{
+  margin-top: -1rem;
+}
+.testimonial-quote .fa-quote-right{
+  margin-top: 1rem;
+}
+
+
+/* registration */
+
+.registration{
+  padding: 5rem 2rem;
+  color: #fff;
+  
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(
+      to bottom,
+      rgba(10, 8, 9, 0.87),
+      rgb(26, 24, 26)
+    ),
+    url("./assets/image/reg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.registration h1{
+  font-family: "RocknRoll One", sans-serif;
+}
+.registration-grid {
+  margin-top: 3rem;
+  padding: 0 10rem;
+}
+.registration-grid .container{
+  padding: 0 5rem  !important;
+}
+
+.registration .reg{
+  height: 60vh;
+  width: 100%; 
+  padding: 2rem 1rem;
+}
+.registration .reg li::marker{
+  content: "✓";
+  color: palevioletred;
+  font-size: 20px;
+  font-weight: 900;
+  
+}
+.registration .reg ul{
+  padding: 2rem 1rem;
+  text-align: left;
+}
+.registration .reg li{
+  padding: 5px 0;
+  font-size: 1.2rem;
+}
+.registration-student{
+  background-color: #fff;
+  color: rgb(4, 26, 44);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+.registration-tutor{
+  background-color: rgb(4, 26, 44);
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.registration-student button{
+  padding: 15px 30px;
+  background-color: #e60073;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.registration-tutor button{
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #e60073;
+  border: none;
+  border-radius: 5px;
+}
